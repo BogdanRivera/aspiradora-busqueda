@@ -210,7 +210,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     
-        setTimeout(() => moverAspiradoraPasoAPaso(path, index + 1), 500);  // Delay de 500ms entre cada movimiento
+        setTimeout(() => moverAspiradoraPasoAPaso(path, index + 1), 250);  // Delay de 250ms entre cada movimiento
     }
     
     
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let movimientoInterval;
     iniciaAspiradoraBtn.addEventListener('click', () => {
         if (movimientoInterval) clearInterval(movimientoInterval); // Evita multiples intervalos
-        movimientoInterval = setInterval(moverAspiradora, 500); // Mover la aspiradora cada 500 ms
+        movimientoInterval = setInterval(moverAspiradora, 250); // Mover la aspiradora cada 250 ms
         iniciarTemporizador();  // Iniciar el temporizador
     });
 
